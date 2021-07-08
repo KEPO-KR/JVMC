@@ -1,0 +1,82 @@
+@keyframes motion {
+	0% {margin-top: 350px;}
+	100% {margin-top: 355px;}
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.box {
+	animation: fadein 3s;
+-moz-animation: fadein 3s; /* Firefox */
+-webkit-animation: fadein 3s; /* Safari and Chrome */
+-o-animation: fadein 3s; /* Opera */
+}
+html {scroll-behavior:smooth;}
+body {background: #333;margin: 0;padding: 0;width: 100%;height: 100%;}
+header {position: relative;width: 100%;background: #222;height: 90px;line-height: 90px;margin: 0;text-align: center;}
+strong {color: tomato;}
+h1 {color: #eee;font-size: 40px;margin: 0;text-align: center;display: inline;}
+h2 {font-size: 23px;text-align: center;margin-bottom: 25px;}
+footer {width: 80%;height: 100px;color: #ccc;margin: 30px auto;}
+
+#side-m {position: fixed;height: 400px;width: 80px;top: 200px;left: 20px;}
+#side {display: inline;font-size: 20px;color: #ccc;position: absolute;top: -6px;height: 20px;}
+#main {position: relative;width: 100%;height: 640px;}
+#up {width: 200px;height: 400px;position: fixed;background: rgba(1,1,1,0.5);right: 20px;top: 200px;color: #eee;padding: 3px 10px;}
+#join {width: 150px;height: 60px;text-align: center;margin: 0 auto;line-height: 60px;text-decoration: none;background-color: rgba(155, 155, 155, 0.3);color: rgba(255, 255, 255, 0.7);font-weight: 600;
+  border-radius: 2.5px;border: 1.5px solid #aaa;padding: 3px 7px;}
+#join:hover {background-color: rgba(15,15,15,0.5);
+	nimation: fadein 3s;
+	-moz-animation: fadein 3s; /* Firefox */
+	-webkit-animation: fadein 3s; /* Safari and Chrome */
+	-o-animation: fadein 3s; /* Opera */}
+#btn {width: 200px;text-align: center;position:absolute;bottom: 30px;}
+
+#side-m a {
+	font-weight: bold;font-size: 20px;color: black;text-decoration: none;width: 80px;height: 80px;border: 1px solid tomato;display: block;background-color: tomato;border-radius: 45px;text-align: center;line-height: 80px;
+}
+
+.wrap {width: 80%;height: 700px;margin: 0 auto;}
+.side-sp {
+	margin-top: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #eee;
+  text-align: left;
+}
+@media screen and (max-width:900px) {
+	#side-m {display: none;}
+	#side-m {display: none;}
+	#up {width: 80%;margin: 0 auto;position:absolute;left: 0;right: 0;}
+	#btn {width: 100%;}
+	#wr {width: 100%;}
+}
